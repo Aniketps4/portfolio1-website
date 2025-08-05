@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Data Science Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .animate-fade-in-down {
+            animation: fadeInDown 1s ease-out both;
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 1s ease-out both;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+<!-- Header -->
+<header class="bg-blue-600 text-white py-4 sticky top-0 z-10">
+    <nav class="container mx-auto flex justify-between items-center px-4">
+        <h1 class="text-2xl font-bold">Data Science Portfolio</h1>
+        <ul class="flex space-x-6">
+            <li><a href="#about" class="hover:underline">About</a></li>
+            <li><a href="#projects" class="hover:underline">Projects</a></li>
+            <li><a href="#skills" class="hover:underline">Skills</a></li>
+            <li><a href="#contact" class="hover:underline">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Profile Section -->
+<section class="bg-white py-16 text-center animate-fade-in-down">
+    <div class="container mx-auto px-4">
+        <img src="aniphoto.jpg" alt="Aniket Pasi" class="w-40 h-30 mx-auto shadow-lg mb-4 object-cover border-4 border-blue-600">
+        <h2 class="text-3xl font-bold mb-2">Hi, I'm Aniket 👋</h2>
+        <p class="text-gray-700 text-lg mb-6 max-w-2xl mx-auto">Data Scientist | ML Enthusiast | AI Developer</p>
+        
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+        <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+            I am Aniket, a passionate data scientist with expertise in Python, Machine Learning, Deep Learning, NLP, and Generative AI. Currently pursuing my M.Tech in Data Science from NIT Surat. Skilled in transforming raw data into insights using TensorFlow, scikit-learn, Langchain, and more.
+        </p>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="bg-white py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="project-list">
+            <!-- Filled by JS -->
+        </div>
+    </div>
+</section>
+
+ <!-- Skills Section -->
+  <section id="skills" class="text-center py-12 px-6 bg-white shadow">
+    <h2 class="text-3xl font-bold mb-6">Technical Skills & Interests 🚀</h2>
+    <div class="grid md:grid-cols-2 gap-8 text-left max-w-4xl mx-auto">
+
+      <!-- Languages -->
+      <div>
+        <h3 class="text-blue-600 font-semibold text-lg mb-2">Languages</h3>
+        <p class="flex items-center space-x-2 mb-1">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="h-5 w-5" /> <span>C++</span>
+        </p>
+        <p class="flex items-center space-x-2 mb-1">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="h-5 w-5" /> <span>Python</span>
+        </p>
+        <p class="flex items-center space-x-2 mb-1">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="h-5 w-5" /> <span>HTML</span>
+        </p>
+        <p class="flex items-center space-x-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="h-5 w-5" /> <span>CSS</span>
+        </p>
+      </div>
+
+      <!-- Frameworks -->
+      <div>
+        <h3 class="text-blue-600 font-semibold text-lg mb-2">Frameworks</h3>
+        
+        <p class="flex items-center space-x-2 mb-1">
+          <img src="llma.jpg" class="h-5 w-5" /> <span>LLaMa</span>
+        </p>
+        <p class="flex items-center space-x-2 mb-1">
+          <img src="lanchain.jpeg" class="h-5 w-5" /> <span>Langchain</span>
+        </p>
+        <p class="flex items-center space-x-2 mb-1">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" class="h-5 w-5" /> <span>PyTorch</span>
+        </p>
+        <p class="flex items-center space-x-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" class="h-5 w-5" /> <span>TensorFlow</span>
+        </p>
+      </div>
+
+      <!-- Developer Tools -->
+      <div>
+        <h3 class="text-blue-600 font-semibold text-lg mb-2">Developer Tools</h3>
+        <p class="flex items-center space-x-2 mb-1">
+          <img src="power.png" class="h-5 w-5" /> <span>Power BI</span>
+        </p>
+        <p class="flex items-center space-x-2 mb-1">
+          <img src="Google.png" class="h-5 w-5" /> <span>Google Colab</span>
+        </p>
+        <p class="flex items-center space-x-2 mb-1">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" class="h-5 w-5" /> <span>Jupyter Notebook</span>
+        </p>
+        <p class="flex items-center space-x-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="h-5 w-5" /> <span>VS Code</span>
+        </p>
+      </div>
+
+      <!-- Automation, DB, Interests -->
+      <div>
+        <h3 class="text-blue-600 font-semibold text-lg mb-2">AI Automation Tools</h3>
+        <p class="flex items-center space-x-2 mb-1">
+          <img src="make-color.png" class="h-5 w-5" /> <span>Make.com</span>
+        </p>
+        <p class="flex items-center space-x-2 mb-4">
+          <img src="n8n.png" class="h-5 w-5" /> <span>n8n</span>
+        </p>
+
+        <h3 class="text-blue-600 font-semibold text-lg mb-2">Databases</h3>
+        <p class="flex items-center space-x-2 mb-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="h-5 w-5" /> <span>MySQL</span>
+        </p>
+
+        <h3 class="text-blue-600 font-semibold text-lg mb-2">Interests</h3>
+        <p>AI Agents, Multimodal Learning, Prompt Engineering,GenAI</p>
+      </div>
+    </div>
+  </section>s
+
+<!-- Resume Download -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-6">Download My Resume</h2>
+        <a href="resumetex_aniket_9.pdf" download
+           class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-300 inline-block">
+            Download Resume (PDF)
+        </a>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
+        <p class="text-lg text-gray-700 mb-6">Interested in collaborating or learning more? Reach out!</p>
+        <div class="flex justify-center space-x-4">
+            <a href="mailto:aniket.ps.1998@gmail.com" class="text-blue-600 hover:underline">Email</a>
+            <a href="https://www.linkedin.com/in/aniket-pasi-ap/" class="text-blue-600 hover:underline">LinkedIn</a>
+            <a href="https://github.com/Aniketps4" class="text-blue-600 hover:underline">GitHub</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-blue-600 text-white py-4 text-center">
+    <p>&copy; 2025 Data Science Portfolio. All rights reserved.</p>
+</footer>
+
+<!-- JS Project Renderer -->
+<script>
+    const projects = [
+        {
+            title: "Netflix Movie Recommendation System",
+            description: "Built using Streamlit and ML, recommends similar shows using PCA and Nearest Neighbors.",
+            link: "https://github.com/Aniketps4/Netflix-Movie-recomendation",
+            image: "netflixs.jpg"
+        },
+        {
+            title: "Potato Disease Detection using CNN",
+            description: "Classifies potato leaf images using CNN into healthy, early blight, or late blight.",
+            link: "https://github.com/Aniketps4/Potato-disease-detection",
+            video: "https://www.youtube.com/watch?v=VIDEO_ID_2",
+            image: "potato.jpg"
+        },
+        {
+            title: "Multimodal Fake News Detection",
+            description: "Fake news classifier using both image and text features with pretrained models.",
+            link: "https://github.com/Aniketps4/Multimodal-fake-news-detection/tree/main",
+            video: "https://www.youtube.com/watch?v=VIDEO_ID_3",
+            image: "fake_news.png"
+        },
+        {
+            title: "Bitcoin Sentiment Analysis",
+            description: "Analyzes market sentiment vs Bitcoin pricing using historical Hyperliquid data.",
+            link: "https://github.com/Aniketps4/Bitcoin-sentiment-analysis",
+            video: "https://www.youtube.com/watch?v=VIDEO_ID_4",
+            image: "bitcoin.jpg"
+        },
+        {
+            title: "Credit Score Analysis",
+            description: "Computes credit scores from transaction logs, saves results to JSON and visualizes.",
+            link: "https://github.com/Aniketps4/credit_score_analysis",
+            video: "https://www.youtube.com/watch?v=VIDEO_ID_5",
+            image: "credit.png"
+        },
+        {
+            title: "Support Ticket Analysis and Classification",
+            description: "Uses NLP to classify support tickets by type and urgency.",
+            link: "https://github.com/Aniketps4/Support_ticket_analysis",
+            video: "https://www.youtube.com/watch?v=VIDEO_ID_6",
+            image: "support.png"
+        },
+        {
+            title: "Automated Book Publication Workflow",
+            description: "AI pipeline for end-to-end automated book publishing.",
+            link: "https://github.com/Aniketps4/Book_Automation",
+            video: "https://www.youtube.com/watch?v=VIDEO_ID_7",
+            image: "book.jpeg"
+        },
+        {
+            title: "Cross-Camera Player Mapping",
+            description: "Matches football players across cameras using YOLOv11 + ReID models.",
+            link: "https://github.com/Aniketps4/cross_camera_player_identification",
+            video: "https://www.youtube.com/watch?v=VIDEO_ID_8",
+            image: "football.png"
+        },
+        {
+            title: "AI Data Agent",
+            description: "Conversational AI agent answering SQL database queries using LLMs.",
+            link: "https://github.com/Aniketps4/AI-DATA-Agent",
+            video: "https://www.youtube.com/watch?v=VIDEO_ID_9",
+            image: "ai_data.png"
+        }
+    ];
+
+    function renderProjects() {
+        const projectList = document.getElementById('project-list');
+        projects.forEach(project => {
+            const projectCard = document.createElement('div');
+            projectCard.className = 'bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105';
+
+            projectCard.innerHTML = `
+                <img src="${project.image}" alt="${project.title}" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">${project.title}</h3>
+                    <p class="text-gray-600 mb-4">${project.description}</p>
+                    <a href="${project.link}" target="_blank" class="text-blue-600 hover:underline font-medium">🔗 View Project</a>
+                </div>
+            `;
+            projectList.appendChild(projectCard);
+        });
+    }
+
+    renderProjects();
+</script>
+
+</body>  
+</html>
